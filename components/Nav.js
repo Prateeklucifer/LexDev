@@ -110,7 +110,7 @@ export default function Nav() {
               <Link href="/blogs">Blogs</Link>
             </li>
             <li className=" my-8">
-            <button onClick={signIn}>Login</button>
+            <Link href="/soon">Login</Link>
           </li>
           </ul>
         }
@@ -175,12 +175,11 @@ export default function Nav() {
             </div>
           </div>
         ) : (
-          <button
+          <Link href="/soon"
             className="  text-white bg-emerald-500 px-4 py-1 rounded-md font-semibold hover:bg-emerald-600 md:flexx transition-colors duration-300 "
-            onClick={signIn}
           >
             Login
-          </button>
+          </Link>
         )}
 
         {/* <div className="flex gap-4  ">
