@@ -26,14 +26,14 @@ export default function Nav() {
           LexDev
         </Link>
         <ul className="md:flex space-x-7 hidden text-slate-600 lg:space-x-14 font-semibold  ">
-          {/* <li>
+          <li>
             <Link
               href="/"
               className="hover:text-emerald-600 transition-colors duration-300 "
             >
               Home
             </Link>
-          </li> */}
+          </li>
           <li>
             <Link
               href="/blogs"
@@ -110,7 +110,7 @@ export default function Nav() {
               <Link href="/blogs">Blogs</Link>
             </li>
             <li className=" my-8">
-            <Link href="/soon">Login</Link>
+            <button onClick={signIn}>Login</button>
           </li>
           </ul>
         }
@@ -175,11 +175,11 @@ export default function Nav() {
             </div>
           </div>
         ) : (
-          <Link href="/soon"
+          <button onClick={signIn}
             className="  text-white bg-emerald-500 px-4 py-1 rounded-md font-semibold hover:bg-emerald-600 md:flexx transition-colors duration-300 "
           >
             Login
-          </Link>
+          </button>
         )}
 
         {/* <div className="flex gap-4  ">
